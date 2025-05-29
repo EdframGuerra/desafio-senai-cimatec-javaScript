@@ -10,10 +10,19 @@ html {
     height: 100%;
 }
 
+div#conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+
 div#carousel {
     height: 46vh;
     width: 100%;
-     max-height: 628px;
+    max-height: 628px;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -23,7 +32,7 @@ div#carousel-title a {
     text-decoration: none;
 }
 
-div#carousel-title  {
+div#carousel-title {
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -39,7 +48,7 @@ header ul {
 }
 
 ul {
-	display: inline-block;
+    display: inline-block;
 }
 
 header {
@@ -112,6 +121,7 @@ footer div {
 button:hover {
     background: #1b357e;
 }
+
 button {
     background: #1351d8;
     color: #fff;
