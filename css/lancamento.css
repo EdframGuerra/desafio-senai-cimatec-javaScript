@@ -83,7 +83,7 @@ div#compare {
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
 }
-/* Telas grandes (acima de 1200px) */
+
 @media (min-width: 1200px) {
     ul.modelcars li {
         width: 350px;
@@ -93,7 +93,6 @@ div#compare {
     }
 }
 
-/* Telas médias (tablets na horizontal e desktops pequenos) */
 @media (max-width: 1199px) and (min-width: 768px) {
     ul.modelcars li {
         width: 45%;
@@ -111,7 +110,7 @@ div#compare {
     }
 }
 
-/* Telas pequenas (tablets na vertical e celulares grandes) */
+
 @media (max-width: 767px) {
     ul.modelcars {
         padding: 0;
@@ -146,7 +145,6 @@ div#compare {
     }
 }
 
-/* Telas muito pequenas (celulares pequenos) */
 @media (max-width: 480px) {
     .textmodel {
         font-size: 12px;

@@ -129,7 +129,6 @@ button {
     border-radius: 10px;
 }
 
-/* Telas pequenas (celulares até 600px) */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
@@ -166,7 +165,6 @@ button {
     }
 }
 
-/* Telas médias (tablets de 601px até 900px) */
 @media (max-width: 900px) {
     header {
         flex-direction: column;

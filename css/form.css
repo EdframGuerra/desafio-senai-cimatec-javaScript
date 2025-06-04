@@ -53,8 +53,6 @@ button {
     margin-left: 8px;
 }
 
-/* RESPONSIVIDADE */
-
 @media screen and (max-width: 1024px) {
     .fordform {
         width: 90%;

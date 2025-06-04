@@ -26,7 +26,7 @@ class Carousel {
         const item = carouselArr[Carousel._sequence];
         if (!item) return;
 
-         const img = document.getElementById('carousel');
+        const img = document.getElementById('carousel');
         const title = document.getElementById('carousel-title');
         const link = document.getElementById('carousel-link');
         if (img) img.src = item.image;

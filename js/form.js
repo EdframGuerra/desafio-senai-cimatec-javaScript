@@ -23,9 +23,6 @@ function Post(form) {
         form.elements.namedItem("cpf").value,
         form.elements.namedItem("telefone").value,
         form.elements.namedItem("contato").value);
-
-
-
 }
 
 function Enviar() {
