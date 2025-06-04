@@ -3,6 +3,8 @@ let carArr = [];
 
 class Car {
     constructor(nome, preco, alturaCacamba, alturaVeiculo, alturaSolo, capacidadeCarga, motor, potencia, volumeCacamba, roda, image) {
+
+        //completar o construtor com o this.atributo=atributo
         this.nome = nome;
         this.preco = preco;
         this.alturaCacamba = alturaCacamba;
