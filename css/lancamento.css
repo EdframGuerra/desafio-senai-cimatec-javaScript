@@ -83,3 +83,82 @@ div#compare {
     -webkit-box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
     box-shadow: 1px 1px 6px 0px rgb(0 0 0 / 34%);
 }
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    ul.modelcars li {
+        width: 350px;
+    }
+    img.photocar {
+        width: 300px;
+    }
+}
+
+/* Telas médias (tablets na horizontal e desktops pequenos) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    ul.modelcars li {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+    img.photocar {
+        width: 100%;
+    }
+    .info {
+        width: 70%;
+    }
+    div#compare {
+        width: 80vw;
+        left: 10vw;
+    }
+}
+
+/* Telas pequenas (tablets na vertical e celulares grandes) */
+@media (max-width: 767px) {
+    ul.modelcars {
+        padding: 0;
+    }
+    ul.modelcars li {
+        width: 90%;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+    img.photocar {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;
+        display: block;
+    }
+    .infocar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    div#compare {
+        width: 90vw;
+        height: auto;
+        top: 10vh;
+        left: 5vw;
+    }
+    iframe {
+        height: 250px !important;
+    }
+}
+
+/* Telas muito pequenas (celulares pequenos) */
+@media (max-width: 480px) {
+    .textmodel {
+        font-size: 12px;
+    }
+    .textprice {
+        font-size: 10px;
+    }
+    .checkbox {
+        width: 25px;
+        height: 25px;
+    }
+    button {
+        width: 90%;
+    }
+}

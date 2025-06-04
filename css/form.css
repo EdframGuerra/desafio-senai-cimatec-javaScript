@@ -52,3 +52,84 @@ button {
 .titulo {
     margin-left: 8px;
 }
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+    .fordform {
+        width: 90%;
+    }
+
+    select.fordform {
+        width: 95%;
+    }
+
+    button {
+        float: none;
+        width: 50%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .titulo {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .forms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main div {
+        display: block;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .fordform {
+        width: 90%;
+    }
+
+    select.fordform {
+        width: 95%;
+    }
+
+    button {
+        float: none;
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .titulo {
+        margin-left: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fordform,
+    select.fordform {
+        width: 95%;
+    }
+
+    button {
+        width: 95%;
+    }
+
+    .forms {
+        gap: 10px;
+    }
+}

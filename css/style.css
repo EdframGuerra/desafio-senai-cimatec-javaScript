@@ -128,3 +128,72 @@ button {
     border: 0px;
     border-radius: 10px;
 }
+
+/* Telas pequenas (celulares até 600px) */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    div#conteiner img {
+        width: 90%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer div {
+        float: none;
+        margin: 10px 0 0 0;
+    }
+
+    nav#social ul {
+        padding: 0;
+    }
+}
+
+/* Telas médias (tablets de 601px até 900px) */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav a {
+        margin: 10px;
+    }
+
+    div#conteiner img {
+        width: 80%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer div {
+        float: none;
+        margin: 10px 0;
+    }
+}

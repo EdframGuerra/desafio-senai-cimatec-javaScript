@@ -13,6 +13,9 @@ class contato {
 }
 
 function Post(form) {
+    if (!Enviar()) {
+        return false;
+    }
 
     let data = new contato(form.elements.namedItem("nome").value,
         form.elements.namedItem("sobrenome").value,
@@ -21,14 +24,35 @@ function Post(form) {
         form.elements.namedItem("telefone").value,
         form.elements.namedItem("contato").value);
 
+
+
 }
 
 function Enviar() {
 
     let nome = document.getElementById("nomeid");
+    let sobrenome = document.getElementById("sobrenomeid");
+    let email = document.getElementById("emailid");
+    let cpf = document.getElementById("cpfid");
+    let telefone = document.getElementById("telefoneid");
+    let contato = document.getElementById("contatoid");
 
-    if (nome.value != "") {
+    if (
+        !nome.value.trim() ||
+        !sobrenome.value.trim() ||
+        !email.value.trim() ||
+        !cpf.value.trim() ||
+        !telefone.value.trim() ||
+        contato.selectedIndex === 0 // Assume o primeiro option é o placeholder
+    ) {
+        alert("Todos os campos devem ser preenchidos.");
+        return false;
+    } else {
         alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso');
     }
+    return true;
 
 }
+
+
+
