@@ -1,97 +1,142 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ford</title>
-    <link href="css/reset.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-</head>
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <div>
-            <img src="img/logo-ford-256.png" width="150" class="logo" />
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="lancamento.html">Lançamento</a>
-                </li>
-                <li>
-                    <a href="contato.html">Contato</a>
-                </li>
-            </ul>
-        </nav>
-
+      <div>
+        <img src="img/logo-ford-256.png" width="150" class="logo" />
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="lancamento.html">Lançamento</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="forms">
-            <div>
-                <img src="img/xls 2.2 diesel.jpg">
-            </div>
-            <div>
-                <h2 class="titulo">Sobre Você</h2>
-                <form onsubmit="Post(this);">
-                    <input type="text" id="nomeid" name="nome" placeholder="NOME*" class="fordform" required>
-                    <input type="text" id="emailid" name="email" placeholder="E-MAIL*" class="fordform" required>
-                    <input type="text" id="cpfid" name="cpf" placeholder="CPF*" class="fordform" required>
-                    <input type="text" id="sobrenomeid" name="sobrenome" placeholder="SOBRENOME*" class="fordform"
-                        required>
-                    <input type="text" id="telefoneid" name="telefone" placeholder="TELEFONE*" class="fordform"
-                        required>
-                    <select name="contato" id="contatoid" class="fordform" required>
-                        <option selected>COMO DESEJA SER CONTATADO</option>
-                        <option>TELEFONE</option>
-                        <option>E-MAIL</option>
-                    </select>
-                    <div class="politica_privacidade">  <p>
-                            Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
-                            qualquer momento, será possível editar ou remover tais dados. <a
-                                href="https://www.ford.com.br/politica-de-privacidade/" rel="noopener noreferrer">Termos
-                                e Condições</a>
-                        </p>
-                        <!--INSERIRO OS CHECKBOXX-->
-                        <label>
-                            <input type="checkbox" id="checkbox_lgpd1">Sim. Li e concordo com os Termos e Condições
-                        </label>
-                        <label>
-                            <input type="checkbox" id="checkbox_lgpd2">Também quero receber descontos e novidades.
-                        </label>
-                    </div>
-                    <button id="botao_enviar" type="submit" disabled>Enviar</button>
-                    
-                </form>
-            </div>
+      <div class="forms">
+        <div>
+          <img src="img/xls 2.2 diesel.jpg" />
         </div>
+        <div>
+          <h2 class="titulo">Sobre Você</h2>
+          <form onsubmit="Post(this);">
+            <input
+              type="text"
+              id="nomeid"
+              name="nome"
+              placeholder="NOME*"
+              class="fordform"
+              required
+            />
+            <input
+              type="text"
+              id="emailid"
+              name="email"
+              placeholder="E-MAIL*"
+              class="fordform"
+              required
+            />
+            <input
+              type="text"
+              id="cpfid"
+              name="cpf"
+              placeholder="CPF*"
+              class="fordform"
+              required
+            />
+            <input
+              type="text"
+              id="sobrenomeid"
+              name="sobrenome"
+              placeholder="SOBRENOME*"
+              class="fordform"
+              required
+            />
+            <input
+              type="text"
+              id="telefoneid"
+              name="telefone"
+              placeholder="TELEFONE*"
+              class="fordform"
+              required
+            />
+            <select name="contatoSelect" id="contatoid" class="fordform" required>
+              <option selected>COMO DESEJA SER CONTATADO</option>
+              <option>TELEFONE</option>
+              <option>E-MAIL</option>
+            </select>
+            <div class="politica_privacidade">
+              <p>
+                Os dados serão mantidos em nossa base de dados, só enquanto for
+                desejado por você. A qualquer momento, será possível editar ou
+                remover tais dados, conforme nossa
+                <a
+                  href="https://www.ford.com.br/politica-de-privacidade/"
+                  rel="noopener noreferrer"
+                  >politica de privacidade</a
+                >
+              </p>
+              <label>
+                <input type="checkbox" id="checkbox_lgpd1" />Sim. Li e concordo
+                com os Termos e Condições
+              </label>
+              <label>
+                <input type="checkbox" id="checkbox_lgpd2" />Também quero
+                receber descontos e novidades.
+              </label>
+            </div>
+            <button id="botao_enviar" type="submit" disabled>Enviar</button>
+          </form>
+        </div>
+      </div>
     </main>
     <footer>
-        <nav id="social">
-            <ul>
-                <li><span class="redesociais">Redes Sociais</span></li>
-                <li><a href="#" title="Facebook"><img src="img/facebook-50.png"></a></li>
-                <li><a href="#" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
-                <li><a href="#" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="img/ford-96.png" width="70" />
-        </div>
+      <nav id="social">
+        <ul>
+          <li><span class="redesociais">Redes Sociais</span></li>
+          <li>
+            <a href="#" title="Facebook"><img src="img/facebook-50.png" /></a>
+          </li>
+          <li>
+            <a href="#" title="YouTube"
+              ><img src="img/youtube-squared-50.png"
+            /></a>
+          </li>
+          <li>
+            <a href="#" title="Instagram"
+              ><img src="img/instagram-logo-50.png"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <img src="img/ford-96.png" width="70" />
+      </div>
     </footer>
     <script src="/js/form.js"></script>
     <script>
-        const checkbox1 = document.getElementById("checkbox_lgpd1");
-        const botao = document.getElementById("botao_enviar");
-        checkbox1.addEventListener("change", () => {
-            botao.disabled = !checkbox1.checked;
-        });
+      const checkbox1 = document.getElementById("checkbox_lgpd1");
+      const botao = document.getElementById("botao_enviar");
+      checkbox1.addEventListener("change", () => {
+        botao.disabled = !checkbox1.checked;
+      });
     </script>
-</body>
-
+  </body>
 </html>
