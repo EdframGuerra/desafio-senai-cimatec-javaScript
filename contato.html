@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div>
@@ -50,7 +51,22 @@
                         <option>TELEFONE</option>
                         <option>E-MAIL</option>
                     </select>
-                    <button type="submit">Enviar</button>
+                    <div class="politica_privacidade">  <p>
+                            Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
+                            qualquer momento, será possível editar ou remover tais dados. <a
+                                href="https://www.ford.com.br/politica-de-privacidade/" rel="noopener noreferrer">Termos
+                                e Condições</a>
+                        </p>
+                        <!--INSERIRO OS CHECKBOXX-->
+                        <label>
+                            <input type="checkbox" id="checkbox_lgpd1">Sim. Li e concordo com os Termos e Condições
+                        </label>
+                        <label>
+                            <input type="checkbox" id="checkbox_lgpd2">Também quero receber descontos e novidades.
+                        </label>
+                    </div>
+                    <button id="botao_enviar" type="submit" disabled>Enviar</button>
+                    
                 </form>
             </div>
         </div>
@@ -69,6 +85,13 @@
         </div>
     </footer>
     <script src="/js/form.js"></script>
+    <script>
+        const checkbox1 = document.getElementById("checkbox_lgpd1");
+        const botao = document.getElementById("botao_enviar");
+        checkbox1.addEventListener("change", () => {
+            botao.disabled = !checkbox1.checked;
+        });
+    </script>
 </body>
 
 </html>

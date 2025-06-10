@@ -41,12 +41,59 @@ h2 {
     font-weight: 800;
 }
 
+.politica_privacidade {
+    width: 320px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.politica_privacidade p{
+    line-height: 1.6;
+}
+
+.politica_privacidade label {
+    display: block;
+    margin-top: 10px;
+}
+
+.politica_privacidade a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+.politica_privacidade + button,
+.politica_privacidade + #botao_enviar {
+    display: block;
+    margin: 10px auto 0 auto;
+    float: none;
+}
 
 button {
     width: 200px;
     height: 40px;
     margin-right: 8px;
     float: right;
+}
+
+#botao_enviar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#botao_enviar:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
 }
 
 .titulo {
@@ -118,6 +165,7 @@ button {
 }
 
 @media screen and (max-width: 480px) {
+
     .fordform,
     select.fordform {
         width: 95%;
